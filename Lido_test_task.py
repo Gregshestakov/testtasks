@@ -66,5 +66,5 @@ result_table['denom_collateral']=result_table['bLuna_denom']+result_table['bETH_
 result_table['ltv'] = (result_table['UST_loan']/result_table['denom_collateral']).fillna(0)
 result_table.replace(np.inf, 0, inplace = True)
 
-result_table.to_excel(r"D:\Program Files (x86)\PythonProjects\result\result_table.xlsx", index=False)
+result_table.to_excel(r".\result_table.xlsx", index=False)
 print('Finished succesfully')
