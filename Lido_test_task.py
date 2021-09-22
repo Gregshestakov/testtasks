@@ -14,7 +14,7 @@ initial_loan_query = query.contract_query(ANCHOR_MARKET,{"borrower_infos":{}})['
 loans_list=[]
 for x in range(len(initial_loan_query)):
     loans_list.append({'wallet_id':initial_loan_query[x]['borrower'],'UST_loan':initial_loan_query[x]['loan_amount']})
-
+support_cycle_loan_query = initial_loan_query
 
 while len(support_cycle_loan_query) == 10 :
     cycle_loan_query=query.contract_query(ANCHOR_MARKET,{"borrower_infos":{"start_after":support_cycle_loan_query[9]['borrower']}})['borrower_infos']
