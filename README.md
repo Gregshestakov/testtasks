@@ -1,4 +1,4 @@
 This repo contain files related to test task solving:
-Result folder  - result of script execution 
-Script explanation - jupyter notebook with each part of code explained
-Test_task - python file with script 
+1. Result folder  - result of script execution 
+2. Script explanation - jupyter notebook with each part of code explained
+3. Test_task - python file with script 
